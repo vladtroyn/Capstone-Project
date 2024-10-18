@@ -1,0 +1,231 @@
+/*
+ // <uniquifier>: Use a unique and descriptive class name
+// <weight>: Use a value from 100 to 700
+
+.josefin-sans-<uniquifier> {
+  font-family: "Josefin Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+   */
+body 
+    {
+        font-family: "Josefin Sans", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 400;
+        font-style: normal;
+        text-shadow: 0.5px 0.5px 0.5px rgb(0, 0,0);
+}
+.container {
+    width: 100vh;
+}
+   /*Nav*/
+  
+  
+  
+   .nav-link {
+    color:#095753;
+    
+   }
+   .navbar-brand {
+    color:#095753;
+   
+   }
+
+   .navbar-toggler {
+    color:#095753;
+    border-color: #095753;
+   }
+
+   .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgb(9, 87, 83)' stroke-width='2' d='M4 7h22M4 15h22M4 23h22' /%3E%3C/svg%3E");
+}
+   /*End Nav*/
+
+/*Intro*/
+.top-container {
+    display: flex;   
+    min-width: 320px;     
+    height: 500px;      
+    margin: 0px; 
+}
+.top-container::after {
+    content: "";
+    height: 500px;
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-image:url(./images/ocean.png);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            opacity: 0.5;
+            z-index: -1;
+}
+.top-left-container {
+position: relative;
+padding: 0;
+margin: 0;
+width: 49%;
+height: 600px;
+text-align: center;
+
+}
+.top-left-container h1 {
+color: #095753;
+padding: 1rem 0 0 1rem;
+margin-top: 3rem;
+}
+.top-left-container h2 {
+    color:#691725;
+    padding: 1rem 0 0 1rem;
+    margin-top: 3rem;
+   
+}
+.top-right-container {
+position: relative;
+width: 49%;
+height: 100%;
+padding: 0;
+margin: 0;
+    
+}
+.top-pic {
+    height: 250px;
+    padding-left: 40%;    
+    transform: rotate(25deg);
+     
+}
+@media (max-width: 650px) {
+    .top-left-container h1 {
+        font-size: 1.25rem;
+    }
+    .top-left-container h2 {
+        font-size: .9rem;
+    }
+    .top-pic {
+        height: 150px;
+        padding: 0;
+        transform: rotate(0deg);
+        margin:30% 30% 0% 20% ;   
+    }
+}
+/*End Intro*/
+/*Education And Skills */
+.container-education {
+       
+    min-width: 320px;         
+    margin: 0;
+   
+
+}
+.container-education::after {
+    content: "";
+    height: 450px;
+            position: absolute;
+            top: 500px;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-image:url(./images/Ocean1.png);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            opacity: 0.5;
+            z-index: -1;
+}
+@media (max-width: 992px) {
+    .container-education {
+       
+        min-width: 320px;             
+        margin: 0; 
+    
+    }
+    .container-education::after {
+        content: "";
+        height: 750px;
+                position: absolute;
+                top: 500px;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                background-image:url(./images/Ocean1.png);
+                background-size: cover;
+                background-position: center;
+                background-repeat: no-repeat;
+                opacity: 0.5;
+                z-index: -1;
+    }
+}
+/*End Education And Skills */
+/*Project*/
+.carousel-caption {
+    bottom: 20%;
+    right: -50%;
+} 
+.carousel-caption h5 {
+    font-size: 2.5rem; 
+    text-shadow: 2px 2px 4px rgb(0, 0,0);
+    color: #095753;
+}
+@media (max-width: 870px) {
+    .carousel-caption h5 {
+        font-size: 1rem;
+    
+    }
+    
+}
+
+/*End Project*/
+/*Contact Me*/
+.btn {    
+    font-size: 24px;
+    color: rgb(0, 0, 0);
+    padding: 10px 30px;
+    transition: 2s;
+    width: 200px;
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+    border-radius: 50px;
+    background: linear-gradient(90deg, rgb(9, 87, 83) 0%, rgb(105, 23, 37) 100%);
+    font-weight: 400;
+    --hover-bgc: #691725;
+    --hover-color: #ffffff;
+    }
+    
+    .btn:hover{
+    color: rgb(255, 255, 255);
+    width: 337px;
+    background: rgb(105, 23, 37) none repeat scroll 0% 0% / auto padding-box border-box;
+    border-color: rgb(204, 0, 105);
+    border-width: 2px;
+    border-style: solid;
+    }
+
+    .contact-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem ;
+    }
+   
+    .footer-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+       
+    }
+    .contact-container, .footer-container {
+        background-image:url(./images/sand12.png);
+    }
+
+    .ico {
+        height: 30px;
+        padding: 5px;
+    }
+    
+
+  
+/*End Contact Me*/
